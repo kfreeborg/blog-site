@@ -2,18 +2,18 @@ const { User } = require('../models');
 
 const userdata = [
   {
-    username: 'alesmonde0',
-    email: 'nwestnedge0@cbc.ca',
+    username: 'stracy',
+    email: 'stracy@abc.com',
     password: 'password123',
   },
   {
-    username: 'jwilloughway1',
-    email: 'rmebes1@sogou.com',
+    username: 'kfreeborg',
+    email: 'kfreeborg@abc.com',
     password: 'password123',
   },
   {
-    username: 'iboddam2',
-    email: 'cstoneman2@last.fm',
+    username: 'snowboardgod',
+    email: 'ihateskiing@abc.com',
     password: 'password123',
   },
 ];
