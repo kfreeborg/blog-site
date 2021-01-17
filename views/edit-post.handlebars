@@ -1,32 +1,36 @@
-<article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
+<article class="mx-3 my-3">
   <h2>
     Edit Post
   </h2>
   <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_content}})</span>
+      <input class="input" name="post-title" type="text" value="{{post.title}}" />
     </div>
     <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
+      <textarea class="textarea" name="post-content" type="text" value="{{post.post_content}}">{{post.post_content}}</textarea>
+    </div>
+    <div>
+      Created by you on {{format_date post.created_at}}
       |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+    <button class="button" type="submit">Save post</button>
+    <button class="button" type="button" class="delete-post-btn">Delete post</button>
   </form>
 </article>
 
-<form class="comment-form">
+<form class="comment-form mx-3 my-3">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea class="textarea" name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button class="button" type="submit">Add comment</button>
   </div>
+  
 </form>
+
+<div><a class="button mx-3 my-3" href="/dashboard"> &larr; Back to dashboard</a></div>
 
 {{> comments post.comments}}
 
