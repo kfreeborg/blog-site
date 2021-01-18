@@ -4,14 +4,14 @@
 
 <form class="comment-form mx-3 my-3">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea class="textarea" name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button class="button mt-3" type="submit">Add comment</button>
   </div>
 </form>
-<div><a class="button mx-3 my-3" href="/dashboard"> &larr; Back to dashboard</a></div>
+{{!-- <div><a class="button mx-3 my-3" href="/dashboard"> &larr; Back to dashboard</a></div> --}}
 {{/if}}
 
 {{> comments post.comments}}
